@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <!-- GOOGLE fONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Rubik+Glitch+Pop&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Protest+Revolution&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Rubik+Glitch+Pop&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Protest+Revolution&display=swap"
+      rel="stylesheet"
+    />
     <!--              -->
     <title>Valentine Day</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div id="content">
+      <svg width="640px" height="480px">
+        <polyline
+          points="1.57 230.954, 140 230.954, 210.843 480, 430 0, 500 240, 640 240"
+          id="back"
+        ></polyline>
+        <polyline
+          points="1.57 230.954, 140 230.954, 210.843 480, 430 0, 500 240, 640 240"
+          id="front"
+        ></polyline>
+      </svg>
+
+      <div class="text_content">
+        <h1>cậu có muốn tặng quà valentine cho tớ khum?</h1>
+      </div>
+      <div class="button_content">
+        <button
+          class="square button_agree"
+          onmouseover="getRandomPosition()"
+          onclick="getRandomPosition()"
+        >
+          không
+        </button>
+        <button class="square button_notagree" onclick="showModel()">có</button>
+      </div>
+    </div>
+
+    <div class="model">
+      <div class="text_model">hihihi, cảm ơn nha 😀</div>
+      <button class="btn_model" onclick="showContainer()">
+        có bất ngờ cho cậu nè 😚
+      </button>
+    </div>
     <div class="container">
-        <img class="paperHeart paperHeart1" style="--time: 0s" src="./img/paperHeart.webp" alt="">
-        <img class="paperHeart paperHeart2" style="--time: 1s" src="./img/paperHeart.webp" alt="">
-        <img class="paperHeart paperHeart3" style="--time: 2.5s" src="./img/paperHeart.webp" alt="">
-        <img class="paperHeart paperHeart4" style="--time: 4s" src="./img/paperHeart.webp" alt="">
-        <img class="paperHeart paperHeart5" style="--time: 2s" src="./img/paperHeart.webp" alt="">
-        <img class="paperHeart paperHeart6" style="--time: 3s" src="./img/paperHeart.webp" alt="">
+      <img
+        class="paperHeart paperHeart1"
+        style="--time: 0s"
+        src="./img/paperHeart.webp"
+        alt=""
+      />
+      <img
+        class="paperHeart paperHeart2"
+        style="--time: 1s"
+        src="./img/paperHeart.webp"
+        alt=""
+      />
+      <img
+        class="paperHeart paperHeart3"
+        style="--time: 2.5s"
+        src="./img/paperHeart.webp"
+        alt=""
+      />
+      <img
+        class="paperHeart paperHeart4"
+        style="--time: 4s"
+        src="./img/paperHeart.webp"
+        alt=""
+      />
+      <img
+        class="paperHeart paperHeart5"
+        style="--time: 2s"
+        src="./img/paperHeart.webp"
+        alt=""
+      />
+      <img
+        class="paperHeart paperHeart6"
+        style="--time: 3s"
+        src="./img/paperHeart.webp"
+        alt=""
+      />
 
-        <div class="boxTitle">
-            <p class="firstTitle partTitle">Happy</p>
-            <p class="secondTitle partTitle">Valentine</p>
+      <div class="boxTitle">
+        <p class="firstTitle partTitle">Happy</p>
+        <p class="secondTitle partTitle">Valentine</p>
+      </div>
+
+      <div class="boxCloud">
+        <div class="cloud"></div>
+        <div class="cloud1"></div>
+        <div class="cloud2"></div>
+
+        <div class="btnBox">
+          <div class="cloudBtn"></div>
+          <button class="openBtn">Chạm vào đây đi</button>
+        </div>
+      </div>
+
+      <div class="cardValentine">
+        <div class="left">
+          <div class="leftFront">
+            <div class="boxShadow">
+              <div class="boxTitleCard"></div>
+            </div>
+
+            <p class="des">Hãy chạm vào tấm thiệp</p>
+          </div>
+          <div class="leftBack">
+            <img class="artHeart" src="./img/artHeart.webp" alt="" />
+          </div>
         </div>
 
-        <div class="boxCloud">
-            <div class="cloud"></div>
-            <div class="cloud1"></div>
-            <div class="cloud2"></div>
-
-            <div class="btnBox">
-                <div class="cloudBtn"></div>
-                <button class="openBtn">Chạm vào đây đi</button>
-            </div>
+        <div class="right">
+          <div class="rightContent">
+            <p class="letterContent"></p>
+          </div>
         </div>
-
-        <div class="cardValentine">
-            <div class="left">
-                <div class="leftFront">
-                    <div class="boxShadow">
-                        <div class="boxTitleCard"></div>
-                    </div>
-
-                    <p class="des">Hãy chạm vào tấm thiệp</p>
-                </div>
-                <div class="leftBack">
-                    <img class="artHeart" src="./img/artHeart.webp" alt="">
-                </div>
-            </div>
-
-            <div class="right">
-                <div class="rightContent">
-                    <p class="letterContent"></p>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <script src="./main.js"></script>
-</body>
-
+  </body>
 </html>
